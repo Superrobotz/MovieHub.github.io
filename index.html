@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Me Movies | Unlimited Entertainment for Free!</title>
+    <link rel="icon" type="icon/image" href="favicon.ico">
+</head>
+<style>
+    * {
+        margin : 0px;
+        font-family : Verdana, Geneva, Tahoma, sans-serif;
+        font-weight : bold;
+    }
+    body {
+        background-color : lightblue;
+    }
+    #pinned-nav {
+        background-color : darkviolet;
+        text-align : right;
+    }
+    #pinned-nav > a {
+        color : white;
+        text-decoration : none;
+        padding : 10px;
+    }
+    #pinned-nav button {
+        background-color : green;
+        color : white;
+        padding : 10px;
+        border : none;
+        font-weight : bold;
+        font-size : 15px;
+    }
+    #logo-section img {
+        position : relative;
+        top : 0px;
+        left : 0px;
+        margin : 0px;
+        height : 90px;
+    }
+    .title {
+        position : absolute;
+        top : 40px;
+        left : 300px;
+        z-index : 1;
+        font-size : 50px;
+        color : lightblue;
+    }
+    .dots {
+        position : absolute;
+        top : 90px;
+        left : 300px;
+        color : lightblue;
+    }
+    .title-description {
+        position : absolute;
+        top : 105px;
+        left : 350px;
+        color : lightblue;
+    }
+    #logo-section {
+        background-color : black;
+    }
+    #unpinned-nav ul li {
+        display : inline;
+    }
+    #unpinned-nav ul li a {
+        position : relative;
+        color : lightblue;
+        font-size : 20px;
+        padding : 9px;
+        text-decoration : none;
+        top : 12px;
+        margin : 0px;
+    }
+    #unpinned-nav ul li a:hover {
+        background-color : lightblue;
+        color : black;
+        height : 25px;
+    }
+    #unpinned-nav ul li a.alive {
+        background-color : lightblue;
+        color : black;
+        height : 25px;
+    }
+    #unpinned-nav {
+        background-color : darkviolet;
+        height : 50px;
+    }
+    #search-bar {
+        position : absolute;
+        background-color : lightblue;
+        right : 5px;
+        top : 50px;
+        height : 30px;
+    }
+    #search-btn {
+        position : absolute;
+        background-color : lightblue;
+        right : 8px;
+        top : 53px;
+        height : 30px;
+    }
+    #search-btn:hover {
+        background-color : black;
+        color : lightblue;
+    }
+</style>
+<body>
+    <div id="pinned-nav">
+            <a href="legal.html">Legal Disclaimer</a>
+            <a href="request.html">Request Section</a>
+            <a href="contact.html">Contact Us</a>
+            <button id="login-btn">Login/SignUp</button>
+    </div>
+    <div id="logo-section">
+        <img src="logo.gif">
+        <p class="title">Ask Me Movies</p>
+        <br>
+        <p class="dots">------------------------------------------------------</p>
+        <p class="title-description">Unlimited Entertainment for Free!</p>
+        <form>
+            <input id="search-bar" type="text" placeholder="Search" action="search.php">
+            <button id="search-btn">&#128269;</button>
+        </form>
+    </div>
+    <div id="logo-header-section"></div>
+    <div id="unpinned-nav">
+        <ul>
+            <li><a class="alive" href="#">HOME</a></li>
+            <li><a href="#">ACTION</a></li>
+            <li><a href="#">ADVENTURE</a></li>
+            <li><a href="#">COMEDY</a></li>
+            <li><a href="#">DRAMA</a></li>
+            <li><a href="#">HORROR</a></li>
+            <li><a href="#">SCIENCE FICTION</a></li>
+            <li><a href="#">FANTASY</a></li>
+            <li><a href="#">HISTORICAL</a></li>
+            <li><a href="#">CRIME</a></li>
+        </ul>
+    </div>
+</body>
+</html>
